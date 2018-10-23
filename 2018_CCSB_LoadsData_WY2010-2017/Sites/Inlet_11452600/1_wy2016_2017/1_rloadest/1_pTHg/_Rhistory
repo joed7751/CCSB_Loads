@@ -1,0 +1,112 @@
+library(akima)
+library(dataRetrieval)
+library(digest)
+library(leaps)
+library(lubridate)
+library(memoise)
+library(rloadest)
+library(smwrBase)
+library(smwrData)
+library(smwrGraphs)
+library(smwrQW)
+library(smwrStats)
+library(boot)
+library(KernSmooth)
+library(lattice)
+pTHg_Inlet<-importRDB("pTHg_InletR.txt")
+InletQ<-importRDB("InletQR.txt")
+pTHg_Inletm1 <- loadReg(pTHg ~model(1), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Inletm1
+pTHg_Inletm2 <- loadReg(pTHg ~model(2), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Inletm2
+pTHg_Inletm3 <- loadReg(pTHg ~model(3), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Inletm3
+pTHg_Inletm4 <- loadReg(pTHg ~model(4), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Inletm4
+pTHg_Inletm5 <- loadReg(pTHg ~model(5), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Inletm5
+pTHg_Inletm6 <- loadReg(pTHg ~model(6), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Inletm6
+pTHg_Inletm7 <- loadReg(pTHg ~model(7), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Inletm7
+pTHg_Inletm8 <- loadReg(pTHg ~model(8), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Inletm8
+pTHg_Inletm9 <- loadReg(pTHg ~model(9), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Inletm9
+pTHg_Inletm1 <- loadReg(pTHg ~model(1), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm1
+pTHg_Inletm2 <- loadReg(pTHg ~model(2), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm2
+pTHg_Inletm3 <- loadReg(pTHg ~model(3), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm3
+pTHg_Inletm4 <- loadReg(pTHg ~model(4), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm4
+pTHg_Inletm5 <- loadReg(pTHg ~model(5), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm5
+pTHg_Inletm6 <- loadReg(pTHg ~model(6), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm6
+pTHg_Inletm7 <- loadReg(pTHg ~model(7), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm7
+pTHg_Inletm8 <- loadReg(pTHg ~model(8), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm8
+pTHg_Inletm9 <- loadReg(pTHg ~model(9), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm9
+plot(pTHg_Inletm3,ann=FALSE)
+title(main = "11452600_pTHg Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
+plot(pTHg_Inletm3,which = 2,set.up = F)
+title(main = "11452600_pTHg Residuals vs Fitted Values")
+plot(pTHg_Inletm3,which = 3,set.up = F)
+title(main = "11452600_pTHg Assessing Heteroscedasticity")
+plot(pTHg_Inletm3,which = 4,set.up = F)
+title(main = "11452600_pTHg Correlogram of Samples")
+plot(pTHg_Inletm3,which = 5,set.up = F)
+title(main="11452600_pTHg Normal Discharge")
+plot(pTHg_Inletm3,which = 6,set.up = F)
+title(main="11452600_pTHg Box Plot of Loads")
+pTHg_Inlet_load<-predLoad(pTHg_Inletm3,InletQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
+write.csv(pTHg_Inlet_load,file.choose())
+pTHg_Inlet_load_day<-predLoad(pTHg_Inletm3, InletQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
+write.csv(pTHg_Inlet_load_day,file.choose())
+View(pTHg_Inlet)
+View(pTHg_Inlet)
+library(akima)
+library(dataRetrieval)
+library(digest)
+library(leaps)
+library(lubridate)
+library(memoise)
+library(rloadest)
+library(smwrBase)
+library(smwrData)
+library(smwrGraphs)
+library(smwrQW)
+library(smwrStats)
+library(boot)
+library(KernSmooth)
+library(lattice)
+pTHg_Inlet<-importRDB("pTHg_InletR.txt")
+InletQ<-importRDB("InletQR.txt")
+View(pTHg_Inlet)
+View(InletQ)
+pTHg_Inletm1 <- loadReg(pTHg ~model(1), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm1
+pTHg_Inletm2 <- loadReg(pTHg ~model(2), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm2
+pTHg_Inletm3 <- loadReg(pTHg ~model(3), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm3
+pTHg_Inletm4 <- loadReg(pTHg ~model(4), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm4
+pTHg_Inletm5 <- loadReg(pTHg ~model(5), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm5
+pTHg_Inletm6 <- loadReg(pTHg ~model(6), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm6
+pTHg_Inletm7 <- loadReg(pTHg ~model(7), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm7
+pTHg_Inletm8 <- loadReg(pTHg ~model(8), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm8
+pTHg_Inletm9 <- loadReg(pTHg ~model(9), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm9
+pTHg_Inlet_load<-predLoad(pTHg_Inletm3,InletQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
+write.csv(pTHg_Inlet_load,file.choose())
+pTHg_Inlet_load_day<-predLoad(pTHg_Inletm3, InletQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
+write.csv(pTHg_Inlet_load_day,file.choose())
