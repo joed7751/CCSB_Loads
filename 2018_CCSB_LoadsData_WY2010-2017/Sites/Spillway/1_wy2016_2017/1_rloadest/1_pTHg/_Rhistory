@@ -1,0 +1,324 @@
+library(dataRetrieval)
+library(digest)
+library(leaps)
+library(lubridate)
+library(memoise)
+library(rloadest)
+library(smwrBase)
+library(smwrData)
+library(smwrGraphs)
+library(smwrQW)
+library(smwrStats)
+library(boot)
+library(KernSmooth)
+library(lattice)
+pTHg_Spillway<-importRDB("pTHg_SpillwayR.txt")
+SpillwayQ<-importRDB("SpillwayQR.txt")
+pTHg_Spillwaym1 <- loadReg(pTHg ~model(1), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym1
+pTHg_Spillwaym2 <- loadReg(pTHg ~model(2), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym2
+pTHg_Spillwaym3 <- loadReg(pTHg ~model(3), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym3
+pTHg_Spillwaym4 <- loadReg(pTHg ~model(4), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym4
+pTHg_Spillwaym5 <- loadReg(pTHg ~model(5), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym5
+pTHg_Spillwaym6 <- loadReg(pTHg ~model(6), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym6
+pTHg_Spillwaym7 <- loadReg(pTHg ~model(7), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym7
+pTHg_Spillwaym8 <- loadReg(pTHg ~model(8), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym8
+pTHg_Spillwaym9 <- loadReg(pTHg ~model(9), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym9
+library(akima)
+library(dataRetrieval)
+library(digest)
+library(leaps)
+library(lubridate)
+library(memoise)
+library(rloadest)
+library(smwrBase)
+library(smwrData)
+library(smwrGraphs)
+library(smwrQW)
+library(smwrStats)
+library(boot)
+library(KernSmooth)
+library(lattice)
+pTHg_Spillway<-importRDB("pTHg_SpillwayR.txt")
+SpillwayQ<-importRDB("SpillwayQR.txt")
+#These data frames are created by the function importRDB.
+#The calls above bring the constituent data and the daily flow data into the script.
+pTHg_Spillwaym1 <- loadReg(pTHg ~model(1), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym1
+pTHg_Spillwaym2 <- loadReg(pTHg ~model(2), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym2
+pTHg_Spillwaym3 <- loadReg(pTHg ~model(3), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym3
+pTHg_Spillwaym4 <- loadReg(pTHg ~model(4), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym4
+pTHg_Spillwaym5 <- loadReg(pTHg ~model(5), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym5
+pTHg_Spillwaym6 <- loadReg(pTHg ~model(6), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym6
+pTHg_Spillwaym7 <- loadReg(pTHg ~model(7), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym7
+pTHg_Spillwaym8 <- loadReg(pTHg ~model(8), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym8
+pTHg_Spillwaym9 <- loadReg(pTHg ~model(9), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym9
+library(akima)
+library(dataRetrieval)
+library(digest)
+library(leaps)
+library(lubridate)
+library(memoise)
+library(rloadest)
+library(smwrBase)
+library(smwrData)
+library(smwrGraphs)
+library(smwrQW)
+library(smwrStats)
+library(boot)
+library(KernSmooth)
+library(lattice)
+pTHg_Spillway<-importRDB("pTHg_SpillwayR.txt")
+SpillwayQ<-importRDB("SpillwayQR.txt")
+#These data frames are created by the function importRDB.
+#The calls above bring the constituent data and the daily flow data into the script.
+pTHg_Spillwaym1 <- loadReg(pTHg ~model(1), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym1
+pTHg_Spillwaym2 <- loadReg(pTHg ~model(2), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym2
+pTHg_Spillwaym3 <- loadReg(pTHg ~model(3), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym3
+pTHg_Spillwaym4 <- loadReg(pTHg ~model(4), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym4
+pTHg_Spillwaym5 <- loadReg(pTHg ~model(5), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym5
+pTHg_Spillwaym6 <- loadReg(pTHg ~model(6), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym6
+pTHg_Spillwaym7 <- loadReg(pTHg ~model(7), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym7
+pTHg_Spillwaym8 <- loadReg(pTHg ~model(8), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym8
+pTHg_Spillwaym9 <- loadReg(pTHg ~model(9), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym9
+View(SpillwayQ)
+View(SpillwayQ)
+pTHg_Spillway<-importRDB("pTHg_SpillwayR.txt")
+SpillwayQ<-importRDB("SpillwayQR.txt")
+pTHg_Spillwaym1 <- loadReg(pTHg ~model(1), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym1
+pTHg_Spillwaym2 <- loadReg(pTHg ~model(2), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym2
+pTHg_Spillwaym3 <- loadReg(pTHg ~model(3), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym3
+pTHg_Spillwaym4 <- loadReg(pTHg ~model(4), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym4
+pTHg_Spillwaym5 <- loadReg(pTHg ~model(5), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym5
+pTHg_Spillwaym6 <- loadReg(pTHg ~model(6), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym6
+pTHg_Spillwaym7 <- loadReg(pTHg ~model(7), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym7
+pTHg_Spillwaym8 <- loadReg(pTHg ~model(8), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym8
+pTHg_Spillwaym9 <- loadReg(pTHg ~model(9), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym9
+pTHg_Spillwaym1 <- loadReg(pTHg ~model(1), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym1
+pTHg_Spillwaym2 <- loadReg(pTHg ~model(2), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym2
+pTHg_Spillwaym3 <- loadReg(pTHg ~model(3), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym3
+pTHg_Spillwaym4 <- loadReg(pTHg ~model(4), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym4
+pTHg_Spillwaym5 <- loadReg(pTHg ~model(5), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym5
+pTHg_Spillwaym6 <- loadReg(pTHg ~model(6), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym6
+pTHg_Spillwaym7 <- loadReg(pTHg ~model(7), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym7
+pTHg_Spillwaym8 <- loadReg(pTHg ~model(8), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym8
+pTHg_Spillwaym9 <- loadReg(pTHg ~model(9), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym9
+library(akima)
+library(dataRetrieval)
+library(digest)
+library(leaps)
+library(lubridate)
+library(memoise)
+library(rloadest)
+library(smwrBase)
+library(smwrData)
+library(smwrGraphs)
+library(smwrQW)
+library(smwrStats)
+library(boot)
+library(KernSmooth)
+library(lattice)
+pTHg_Spillway<-importRDB("pTHg_SpillwayR.txt")
+SpillwayQ<-importRDB("SpillwayQR.txt")
+pTHg_Spillwaym1 <- loadReg(pTHg ~model(1), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym1
+pTHg_Spillwaym2 <- loadReg(pTHg ~model(2), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym2
+pTHg_Spillwaym3 <- loadReg(pTHg ~model(3), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym3
+pTHg_Spillwaym4 <- loadReg(pTHg ~model(4), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym4
+pTHg_Spillwaym5 <- loadReg(pTHg ~model(5), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym5
+pTHg_Spillwaym6 <- loadReg(pTHg ~model(6), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym6
+pTHg_Spillwaym7 <- loadReg(pTHg ~model(7), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym7
+pTHg_Spillwaym8 <- loadReg(pTHg ~model(8), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym8
+pTHg_Spillwaym9 <- loadReg(pTHg ~model(9), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym9
+library(akima)
+library(dataRetrieval)
+library(digest)
+library(leaps)
+library(lubridate)
+library(memoise)
+library(rloadest)
+library(smwrBase)
+library(smwrData)
+library(smwrGraphs)
+library(smwrQW)
+library(smwrStats)
+library(boot)
+library(KernSmooth)
+library(lattice)
+pTHg_Spillway<-importRDB("pTHg_SpillwayR.txt")
+SpillwayQ<-importRDB("SpillwayQR.txt")
+pTHg_Spillwaym1 <- loadReg(pTHg ~model(1), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym1
+pTHg_Spillwaym2 <- loadReg(pTHg ~model(2), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym2
+pTHg_Spillwaym3 <- loadReg(pTHg ~model(3), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym3
+pTHg_Spillwaym4 <- loadReg(pTHg ~model(4), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym4
+pTHg_Spillwaym5 <- loadReg(pTHg ~model(5), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym5
+pTHg_Spillwaym6 <- loadReg(pTHg ~model(6), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym6
+pTHg_Spillwaym7 <- loadReg(pTHg ~model(7), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym7
+pTHg_Spillwaym8 <- loadReg(pTHg ~model(8), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym8
+pTHg_Spillwaym9 <- loadReg(pTHg ~model(9), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym9
+plot(pTHg_Spillwaym3,ann=FALSE)
+title(main = "11452800_pTHg Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
+plot(pTHg_Spillwaym3,which = 2,set.up = F)
+title(main = "11452800_pTHg Residuals vs Fitted Values")
+plot(pTHg_Spillwaym3,which = 3,set.up = F)
+title(main = "11452800_pTHg Assessing Heteroscedasticity")
+plot(pTHg_Spillwaym3,which = 4,set.up = F)
+title(main = "11452800_pTHg Correlogram of Samples")
+plot(pTHg_Spillwaym3,which = 5,set.up = F)
+title(main="11452800_pTHg Normal Discharge")
+plot(pTHg_Spillwaym3,which = 6,set.up = F)
+title(main="11452800_pTHg Box Plot of Loads")
+pTHg_Spillway_load<-predLoad(pTHg_Spillwaym3,SpillwayQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
+write.csv(pTHg_Spillway_load,file.choose())
+pTHg_Spillway_load_day<-predLoad(pTHg_Spillwaym3, SpillwayQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
+write.csv(pTHg_Spillway_load_day,file.choose())
+library(akima)
+library(dataRetrieval)
+library(digest)
+library(leaps)
+library(lubridate)
+library(memoise)
+library(rloadest)
+library(smwrBase)
+library(smwrData)
+library(smwrGraphs)
+library(smwrQW)
+library(smwrStats)
+library(boot)
+library(KernSmooth)
+library(lattice)
+pTHg_Spillway<-importRDB("pTHg_SpillwayR.txt")
+SpillwayQ<-importRDB("SpillwayQR.txt")
+pTHg_Spillwaym1 <- loadReg(pTHg ~model(1), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym1
+pTHg_Spillwaym2 <- loadReg(pTHg ~model(2), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym2
+pTHg_Spillwaym3 <- loadReg(pTHg ~model(3), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym3
+pTHg_Spillwaym4 <- loadReg(pTHg ~model(4), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym4
+pTHg_Spillwaym5 <- loadReg(pTHg ~model(5), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym5
+pTHg_Spillwaym6 <- loadReg(pTHg ~model(6), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym6
+pTHg_Spillwaym7 <- loadReg(pTHg ~model(7), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym7
+pTHg_Spillwaym8 <- loadReg(pTHg ~model(8), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym8
+pTHg_Spillwaym9 <- loadReg(pTHg ~model(9), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym9
+plot(pTHg_Spillwaym1,ann=FALSE)
+title(main = "11452800_pTHg Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
+plot(pTHg_Spillwaym1,which = 2,set.up = F)
+title(main = "11452800_pTHg Residuals vs Fitted Values")
+plot(pTHg_Spillwaym1,which = 3,set.up = F)
+title(main = "11452800_pTHg Assessing Heteroscedasticity")
+plot(pTHg_Spillwaym1,which = 4,set.up = F)
+title(main = "11452800_pTHg Correlogram of Samples")
+plot(pTHg_Spillwaym1,which = 5,set.up = F)
+title(main="11452800_pTHg Normal Discharge")
+plot(pTHg_Spillwaym1,which = 6,set.up = F)
+title(main="11452800_pTHg Box Plot of Loads")
+pTHg_Spillway_load<-predLoad(pTHg_Spillwaym1,SpillwayQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
+write.csv(pTHg_Spillway_load,file.choose())
+pTHg_Spillway_load_day<-predLoad(pTHg_Spillwaym1, SpillwayQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
+write.csv(pTHg_Spillway_load_day,file.choose())
+View(pTHg_Spillway_load)
+library(akima)
+library(dataRetrieval)
+library(digest)
+library(leaps)
+library(lubridate)
+library(memoise)
+library(rloadest)
+library(smwrBase)
+library(smwrData)
+library(smwrGraphs)
+library(smwrQW)
+library(smwrStats)
+library(boot)
+library(KernSmooth)
+library(lattice)
+pTHg_Spillway<-importRDB("pTHg_SpillwayR.txt")
+SpillwayQ<-importRDB("SpillwayQR.txt")
+pTHg_Spillwaym1 <- loadReg(pTHg ~model(1), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym1
+pTHg_Spillwaym2 <- loadReg(pTHg ~model(2), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym2
+pTHg_Spillwaym3 <- loadReg(pTHg ~model(3), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym3
+pTHg_Spillwaym4 <- loadReg(pTHg ~model(4), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym4
+pTHg_Spillwaym5 <- loadReg(pTHg ~model(5), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym5
+pTHg_Spillwaym6 <- loadReg(pTHg ~model(6), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym6
+pTHg_Spillwaym7 <- loadReg(pTHg ~model(7), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym7
+pTHg_Spillwaym8 <- loadReg(pTHg ~model(8), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym8
+pTHg_Spillwaym9 <- loadReg(pTHg ~model(9), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym9
+pTHg_Spillway_load<-predLoad(pTHg_Spillwaym1,SpillwayQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
+pTHg_Spillway_load_day<-predLoad(pTHg_Spillwaym1, SpillwayQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
+View(pTHg_Spillway_load_day)

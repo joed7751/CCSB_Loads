@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1540075008065.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1884846140",
+    "id" : "F157D46",
+    "lastKnownWriteTime" : 1540077942,
+    "last_content_update" : -2147483648,
+    "path" : "C:/Users/slrose/R/2018_CCSB_LoadsData_WY2010-2017/Sites/Inlet_11452600/2_wy2017/2_rloadest/2_SSC/SSC_Inlet_RScript.R",
+    "project_path" : "SSC_Inlet_RScript.R",
+    "properties" : {
+        "cursorPosition" : "75,39",
+        "scrollLine" : "46"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,83 @@
+#pTHg Inlet script for retrieving loads models stats (the stats are used to select the best model for this constituent at this site) and loads predictions.
+
+library(akima)
+library(dataRetrieval)
+library(digest)
+library(leaps)
+library(lubridate)
+library(memoise)
+library(rloadest)
+library(smwrBase)
+library(smwrData)
+library(smwrGraphs)
+library(smwrQW)
+library(smwrStats)
+library(boot)
+library(KernSmooth)
+library(lattice)
+
+pTHg_Inlet<-importRDB("pTHg_InletR.txt")
+InletQ<-importRDB("InletQR.txt")
+
+#These data frames are created by the function importRDB. 
+#The calls above bring the constituent data and the daily flow data into the script.
+
+pTHg_Inletm1 <- loadReg(pTHg ~model(1), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm1
+pTHg_Inletm2 <- loadReg(pTHg ~model(2), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm2
+pTHg_Inletm3 <- loadReg(pTHg ~model(3), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm3
+pTHg_Inletm4 <- loadReg(pTHg ~model(4), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm4
+pTHg_Inletm5 <- loadReg(pTHg ~model(5), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm5
+pTHg_Inletm6 <- loadReg(pTHg ~model(6), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm6
+pTHg_Inletm7 <- loadReg(pTHg ~model(7), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm7
+pTHg_Inletm8 <- loadReg(pTHg ~model(8), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm8
+pTHg_Inletm9 <- loadReg(pTHg ~model(9), data = pTHg_Inlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Inletm9
+
+#These objects of class "loadReg" are created.
+#A list in R allows you to gather a variety of objects under one name (that is, the name of the list) in an ordered way. 
+#These objects can be matrices, vectors, data frames, even other lists, etc. It is not even required that these objects are related to each other in any way.
+#When the models are run (m1-m9), the output will be in the console. These are the stats used to select the best model. 
+
+#print(pTHg_Inletm1,brief = FALSE, load.only = FALSE)
+#print(pTHg_Inletm2,brief = FALSE, load.only = FALSE)
+#print(pTHg_Inletm3,brief = FALSE, load.only = FALSE)
+#print(pTHg_Inletm4,brief = FALSE, load.only = FALSE)
+#print(pTHg_Inletm5,brief = FALSE, load.only = FALSE)
+#print(pTHg_Inletm6,brief = FALSE, load.only = FALSE)
+#print(pTHg_Inletm7,brief = FALSE, load.only = FALSE)
+#print(pTHg_Inletm8,brief = FALSE, load.only = FALSE)
+#print(pTHg_Inletm9,brief = FALSE, load.only = FALSE)
+#Commenting these out. These provide some explanations of the data in a longer form. Brief results are printed to console (pTHg_Inletm1-9)
+
+plot(pTHg_Inletm3,ann=FALSE)
+title(main = "11452600_pTHg Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
+plot(pTHg_Inletm3,which = 2,set.up = F)
+title(main = "11452600_pTHg Residuals vs Fitted Values")
+plot(pTHg_Inletm3,which = 3,set.up = F)
+title(main = "11452600_pTHg Assessing Heteroscedasticity") #Add "of Residuals"?
+plot(pTHg_Inletm3,which = 4,set.up = F)
+title(main = "11452600_pTHg Correlogram of Samples")
+plot(pTHg_Inletm3,which = 5,set.up = F)
+title(main="11452600_pTHg Normal Discharge")
+plot(pTHg_Inletm3,which = 6,set.up = F)
+title(main="11452600_pTHg Box Plot of Loads")
+
+#These functions plot the data using the chosen best model and add a title and labels to the plot.
+
+pTHg_Inlet_load<-predLoad(pTHg_Inletm3,InletQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
+write.csv(pTHg_Inlet_load,file.choose())
+pTHg_Inlet_load_day<-predLoad(pTHg_Inletm3, InletQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
+write.csv(pTHg_Inlet_load_day,file.choose())
+
+#Lines 75 and 77 create data frames that use the function predLoad. 
+#Description of predLoad: Estimate loads from a rating-curve model from loadReg for a new data frame, aggregating the loads by specified time periods.
+#Lines 76 and 78 write the data frames to a .csv file.
+#file.choose() lets the user select the location for the .csv files.
