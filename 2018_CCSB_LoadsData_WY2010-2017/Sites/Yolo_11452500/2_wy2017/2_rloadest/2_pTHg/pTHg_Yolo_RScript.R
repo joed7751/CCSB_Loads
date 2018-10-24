@@ -62,9 +62,9 @@ title(main="11452500_pTHg Box Plot of Loads")
 #These functions plot the data using the chosen best model and add a title and labels to the plot.
 
 pTHg_Yolo_load<-predLoad(pTHg_Yolom3,YoloQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
-write.csv(pTHg_Yolo_load,file.choose())
+write.csv(pTHg_Yolo_load,"2_Yolo_pTHg_Flux_Annual.csv")
 pTHg_Yolo_load_day<-predLoad(pTHg_Yolom3, YoloQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
-write.csv(pTHg_Yolo_load_day,file.choose())
+write.csv(pTHg_Yolo_load_day,"2_Yolo_pTHg_Flux_Daily.csv")
 
 #Lines 64 and 66 create data frames that use the function predLoad. 
 #Description of predLoad: Estimate loads from a rating-curve model from loadReg for a new data frame, aggregating the loads by specified time periods.

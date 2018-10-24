@@ -46,25 +46,25 @@ SSC_Yolom9
 #These objects can be matrices, vectors, data frames, even other lists, etc. It is not even required that these objects are related to each other in any way.
 #When the models are run (m1-m9), the output will be in the console. These are the stats used to select the best model. 
 
-plot(SSC_Yolom3,ann=FALSE)
+plot(SSC_Yolom1,ann=FALSE)
 title(main = "11452500_SSC Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
-plot(SSC_Yolom3,which = 2,set.up = F)
+plot(SSC_Yolom1,which = 2,set.up = F)
 title(main = "11452500_SSC Residuals vs Fitted Values")
-plot(SSC_Yolom3,which = 3,set.up = F)
+plot(SSC_Yolom1,which = 3,set.up = F)
 title(main = "11452500_SSC Assessing Heteroscedasticity") #Add "of Residuals"?
-plot(SSC_Yolom3,which = 4,set.up = F)
+plot(SSC_Yolom1,which = 4,set.up = F)
 title(main = "11452500_SSC Correlogram of Samples")
-plot(SSC_Yolom3,which = 5,set.up = F)
+plot(SSC_Yolom1,which = 5,set.up = F)
 title(main="11452500_SSC Normal Discharge")
-plot(SSC_Yolom3,which = 6,set.up = F)
+plot(SSC_Yolom1,which = 6,set.up = F)
 title(main="11452500_SSC Box Plot of Loads")
 
 #These functions plot the data using the chosen best model and add a title and labels to the plot.
 
-SSC_Yolo_load<-predLoad(SSC_Yolom3,YoloQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
-write.csv(SSC_Yolo_load,file.choose())
-SSC_Yolo_load_day<-predLoad(SSC_Yolom3, YoloQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
-write.csv(SSC_Yolo_load_day,file.choose())
+SSC_Yolo_load<-predLoad(SSC_Yolom1,YoloQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
+write.csv(SSC_Yolo_load,"2_Yolo_SSC_Flux_Annual.csv")
+SSC_Yolo_load_day<-predLoad(SSC_Yolom1, YoloQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
+write.csv(SSC_Yolo_load_day,"2_Yolo_SSC_Flux_Daily.csv")
 
 #Lines 64 and 66 create data frames that use the function predLoad. 
 #Description of predLoad: Estimate loads from a rating-curve model from loadReg for a new data frame, aggregating the loads by specified time periods.

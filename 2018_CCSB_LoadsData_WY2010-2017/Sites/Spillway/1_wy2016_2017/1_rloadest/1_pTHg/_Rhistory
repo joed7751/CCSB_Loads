@@ -322,3 +322,38 @@ pTHg_Spillwaym9
 pTHg_Spillway_load<-predLoad(pTHg_Spillwaym1,SpillwayQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
 pTHg_Spillway_load_day<-predLoad(pTHg_Spillwaym1, SpillwayQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
 View(pTHg_Spillway_load_day)
+library(akima)
+library(dataRetrieval)
+library(digest)
+library(leaps)
+library(lubridate)
+library(memoise)
+library(rloadest)
+library(smwrBase)
+library(smwrData)
+library(smwrGraphs)
+library(smwrQW)
+library(smwrStats)
+library(boot)
+library(KernSmooth)
+library(lattice)
+pTHg_Spillway<-importRDB("pTHg_SpillwayR.txt")
+SpillwayQ<-importRDB("SpillwayQR.txt")
+pTHg_Spillwaym1 <- loadReg(pTHg ~model(1), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym1
+pTHg_Spillwaym2 <- loadReg(pTHg ~model(2), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym2
+pTHg_Spillwaym3 <- loadReg(pTHg ~model(3), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym3
+pTHg_Spillwaym4 <- loadReg(pTHg ~model(4), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym4
+pTHg_Spillwaym5 <- loadReg(pTHg ~model(5), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym5
+pTHg_Spillwaym6 <- loadReg(pTHg ~model(6), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym6
+pTHg_Spillwaym7 <- loadReg(pTHg ~model(7), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym7
+pTHg_Spillwaym8 <- loadReg(pTHg ~model(8), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym8
+pTHg_Spillwaym9 <- loadReg(pTHg ~model(9), data = pTHg_Spillway, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pTHg_Spillwaym9

@@ -73,9 +73,9 @@ title(main="11452600_SSC Box Plot of Loads")
 #These functions plot the data using the chosen best model and add a title and labels to the plot.
 
 SSC_Inlet_load<-predLoad(SSC_Inletm3,InletQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
-write.csv(SSC_Inlet_load,file.choose())
+write.csv(SSC_Inlet_load,"1_Inlet_SSC_Flux_Annual.csv")
 SSC_Inlet_load_day<-predLoad(SSC_Inletm3, InletQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
-write.csv(SSC_Inlet_load_day,file.choose())
+write.csv(SSC_Inlet_load_day,"1_Inlet_SSC_Flux_Daily.csv")
 
 #Lines 75 and 77 create data frames that use the function predLoad. 
 #Description of predLoad: Estimate loads from a rating-curve model from loadReg for a new data frame, aggregating the loads by specified time periods.

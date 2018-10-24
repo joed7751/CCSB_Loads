@@ -75,9 +75,9 @@ title(main="11452900_pTHg Box Plot of Loads")
 #Change the model number in lines 77 and 79 before running the loads predictions. This should be the best model. 
 
 pTHg_Outlet_load<-predLoad(pTHg_Outletm5,OutletQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
-write.csv(pTHg_Outlet_load,file.choose())
+write.csv(pTHg_Outlet_load,"1_Outflow_pTHg_Flux_Annual.csv")
 pTHg_Outlet_load_day<-predLoad(pTHg_Outletm5, OutletQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
-write.csv(pTHg_Outlet_load_day,file.choose())
+write.csv(pTHg_Outlet_load_day,"1_Outflow_pTHg_Flux_Daily.csv")
 
 #Lines 77 and 79 create data frames that use the function predLoad. 
 #Description of predLoad: Estimate loads from a rating-curve model from loadReg for a new data frame, aggregating the loads by specified time periods.

@@ -195,3 +195,38 @@ write.csv(SSC_Spillway_load,file.choose())
 SSC_Spillway_load_day<-predLoad(SSC_Spillwaym7, SpillwayQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
 View(SSC_Spillway_load_day)
 View(SSC_Spillway_load_day)
+library(akima)
+library(dataRetrieval)
+library(digest)
+library(leaps)
+library(lubridate)
+library(memoise)
+library(rloadest)
+library(smwrBase)
+library(smwrData)
+library(smwrGraphs)
+library(smwrQW)
+library(smwrStats)
+library(boot)
+library(KernSmooth)
+library(lattice)
+SSC_Spillway<-importRDB("SSC_SpillwayR.txt")
+SpillwayQ<-importRDB("SpillwayQR.txt")
+SSC_Spillwaym1 <- loadReg(SSC ~model(1), data = SSC_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SSC_Spillwaym1
+SSC_Spillwaym2 <- loadReg(SSC ~model(2), data = SSC_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SSC_Spillwaym2
+SSC_Spillwaym3 <- loadReg(SSC ~model(3), data = SSC_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SSC_Spillwaym3
+SSC_Spillwaym4 <- loadReg(SSC ~model(4), data = SSC_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SSC_Spillwaym4
+SSC_Spillwaym5 <- loadReg(SSC ~model(5), data = SSC_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SSC_Spillwaym5
+SSC_Spillwaym6 <- loadReg(SSC ~model(6), data = SSC_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SSC_Spillwaym6
+SSC_Spillwaym7 <- loadReg(SSC ~model(7), data = SSC_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SSC_Spillwaym7
+SSC_Spillwaym8 <- loadReg(SSC ~model(8), data = SSC_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SSC_Spillwaym8
+SSC_Spillwaym9 <- loadReg(SSC ~model(9), data = SSC_Spillway, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SSC_Spillwaym9
