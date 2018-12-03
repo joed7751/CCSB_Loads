@@ -1,0 +1,46 @@
+#pMeHg Outlet (CENSORED DATA) script for retrieving loads models stats (the stats are used to select the best model for this constituent at this site) and loads predictions.
+
+library(akima)
+library(dataRetrieval)
+library(digest)
+library(leaps)
+library(lubridate)
+library(memoise)
+library(rloadest)
+library(smwrBase)
+library(smwrData)
+library(smwrGraphs)
+library(smwrQW)
+library(smwrStats)
+library(boot)
+library(KernSmooth)
+library(lattice)
+
+pMeHg_Outlet<-importRDB("pMeHg_Comb_OutletR.txt") #Use the combined flow for modeling the outlet. Choose the best model, then use only outflow data on the next script
+#The data frame is created by the function importRDB. 
+#The call above brings the constituent data and the instantaneous flow data into the script.
+
+pMeHg_Outletm1 <- loadReg(pMeHg ~model(1), data = pMeHg_Outlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pMeHg_Outletm1
+pMeHg_Outletm2 <- loadReg(pMeHg ~model(2), data = pMeHg_Outlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pMeHg_Outletm2
+pMeHg_Outletm3 <- loadReg(pMeHg ~model(3), data = pMeHg_Outlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pMeHg_Outletm3
+pMeHg_Outletm4 <- loadReg(pMeHg ~model(4), data = pMeHg_Outlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pMeHg_Outletm4
+pMeHg_Outletm5 <- loadReg(pMeHg ~model(5), data = pMeHg_Outlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pMeHg_Outletm5
+pMeHg_Outletm6 <- loadReg(pMeHg ~model(6), data = pMeHg_Outlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pMeHg_Outletm6
+pMeHg_Outletm7 <- loadReg(pMeHg ~model(7), data = pMeHg_Outlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pMeHg_Outletm7
+pMeHg_Outletm8 <- loadReg(pMeHg ~model(8), data = pMeHg_Outlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pMeHg_Outletm8
+pMeHg_Outletm9 <- loadReg(pMeHg ~model(9), data = pMeHg_Outlet, flow="Flow", dates = "Dates" ,conc.units="ng/L" , station = "CCSB-Yolo")
+pMeHg_Outletm9
+
+#These objects of class "loadReg" are created.
+#A list in R allows you to gather a variety of objects under one name (that is, the name of the list) in an ordered way. 
+#These objects can be matrices, vectors, data frames, even other lists, etc. It is not even required that these objects are related to each other in any way.
+#When the models are run (m1-m9), the output will be in the console. These are the stats used to select the best model. 
+

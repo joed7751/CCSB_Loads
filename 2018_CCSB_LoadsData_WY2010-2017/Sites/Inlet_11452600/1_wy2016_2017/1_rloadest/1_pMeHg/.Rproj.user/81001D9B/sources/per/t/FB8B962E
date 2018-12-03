@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1543449287819.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2310578502",
+    "id" : "FB8B962E",
+    "lastKnownWriteTime" : 1543452451,
+    "last_content_update" : -2147483648,
+    "path" : "C:/Users/slrose/R/2018_CCSB_LoadsData_WY2010-2017/Sites/Inlet_11452600/1_wy2016_2017/1_rloadest/1_pMeHg/pMeHg_Inlet_RScript.R",
+    "project_path" : "pMeHg_Inlet_RScript.R",
+    "properties" : {
+        "cursorPosition" : "77,65",
+        "scrollLine" : "65"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
