@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "3702855334",
+    "hash" : "2973868620",
     "id" : "1E615A1",
-    "lastKnownWriteTime" : 1539983619,
+    "lastKnownWriteTime" : 1544222754,
     "last_content_update" : -2147483648,
-    "path" : "C:/Users/slrose/R/2018_CCSB_LoadsData_WY2010-2017/Sites/Outflow_11452900/1_wy2016_2017/1_rloadest/1_SSC/SSC_Outflow_RScript.R",
+    "path" : "C:/Users/slrose/Desktop/GitHub/2018_CCSB_LoadsData_WY2010-2017/Sites/Outflow_11452900/1_wy2016_2017/1_rloadest/1_SSC/SSC_Outflow_RScript.R",
     "project_path" : "SSC_Outflow_RScript.R",
     "properties" : {
-        "cursorPosition" : "76,132",
+        "cursorPosition" : "79,63",
         "scrollLine" : "53"
     },
     "relative_order" : 2,
