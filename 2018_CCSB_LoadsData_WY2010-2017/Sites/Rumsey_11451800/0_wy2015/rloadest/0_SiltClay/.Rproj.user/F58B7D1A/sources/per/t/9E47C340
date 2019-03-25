@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1553544511045.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1899915035",
+    "id" : "9E47C340",
+    "lastKnownWriteTime" : 1553540622,
+    "last_content_update" : 1553540622,
+    "path" : "C:/Users/slrose/R/2018_CCSB_LoadsData_WY2010-2017/Sites/Rumsey_11451800/0_wy2015/rloadest/0_SiltClay/SiltClay_Rumsey_A_RScript.R",
+    "project_path" : "SiltClay_Rumsey_A_RScript.R",
+    "properties" : {
+        "cursorPosition" : "41,17",
+        "scrollLine" : "16"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
