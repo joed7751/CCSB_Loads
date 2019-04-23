@@ -16,8 +16,8 @@ library(boot)
 library(KernSmooth)
 library(lattice)
 
-SSC_Rumsey<-importRDB("SSC_RumseyR_A.txt")
-RumseyQ<-importRDB("RumseyQR_A.txt")
+SSC_Rumsey<-importRDB("SSC_RumseyR.txt")
+RumseyQ<-importRDB("RumseyQR.txt")
 
 #These data frames are created by the function importRDB. 
 #The calls above bring the constituent data and the daily flow data into the script.
@@ -73,9 +73,9 @@ title(main="11451800_SSC Box Plot of Loads")
 #These functions plot the data using the chosen best model and add a title and labels to the plot.
 
 SSC_Rumsey_load<-predLoad(SSC_Rumseym3,RumseyQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
-write.csv(SSC_Rumsey_load,"1_Rumsey_A_SSC_m3_Flux_Annual.csv")
+write.csv(SSC_Rumsey_load,"1_Rumsey_SSC_m3_Flux_Annual.csv")
 SSC_Rumsey_load_day<-predLoad(SSC_Rumseym3, RumseyQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
-write.csv(SSC_Rumsey_load_day,"1_Rumsey_A_SSC_m3_Flux_Daily.csv")
+write.csv(SSC_Rumsey_load_day,"1_Rumsey_SSC_m3_Flux_Daily.csv")
 
 #Lines 75 and 77 create data frames that use the function predLoad. 
 #Description of predLoad: Estimate loads from a rating-curve model from loadReg for a new data frame, aggregating the loads by specified time periods.
