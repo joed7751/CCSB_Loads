@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556725770208.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3219171032",
+    "id" : "FD74FF16",
+    "lastKnownWriteTime" : 1556727732,
+    "last_content_update" : 1556727732439,
+    "path" : "C:/Users/slrose/R/2018_CCSB_LoadsData_WY2010-2017/Sites/Rumsey_11451800/3_wy2015_2017/3_rloadest/3_SSC/SSC_Rumsey_B_RScript.R",
+    "project_path" : "SSC_Rumsey_B_RScript.R",
+    "properties" : {
+        "cursorPosition" : "77,65",
+        "docOutlineVisible" : "0",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

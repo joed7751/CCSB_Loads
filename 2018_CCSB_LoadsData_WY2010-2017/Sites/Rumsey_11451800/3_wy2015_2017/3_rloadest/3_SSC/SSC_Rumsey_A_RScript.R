@@ -57,25 +57,25 @@ SSC_Rumseym9
 #print(SSC_Rumseym9,brief = FALSE, load.only = FALSE)
 #Commenting these out. These provide some explanations of the data in a longer form. Brief results are printed to console (SSC_Rumseym1-9)
 
-plot(SSC_Rumseym9,ann=FALSE)
-title(main = "11451800_SSC Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
-plot(SSC_Rumseym9,which = 2,set.up = F)
-title(main = "11451800_SSC Residuals vs Fitted Values")
-plot(SSC_Rumseym9,which = 3,set.up = F)
-title(main = "11451800_SSC Assessing Heteroscedasticity") #Add "of Residuals"?
-plot(SSC_Rumseym9,which = 4,set.up = F)
-title(main = "11451800_SSC Correlogram of Samples")
-plot(SSC_Rumseym9,which = 5,set.up = F)
-title(main="11451800_SSC Normal Discharge")
-plot(SSC_Rumseym9,which = 6,set.up = F)
-title(main="11451800_SSC Box Plot of Loads")
+plot(SSC_Rumseym1,ann=FALSE)
+title(main = "11451800_SSC_A_m1 Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
+plot(SSC_Rumseym1,which = 2,set.up = F)
+title(main = "11451800_SSC_A_m1 Residuals vs Fitted Values")
+plot(SSC_Rumseym1,which = 3,set.up = F)
+title(main = "11451800_SSC_A_m1 Assessing Heteroscedasticity") #Add "of Residuals"?
+plot(SSC_Rumseym1,which = 4,set.up = F)
+title(main = "11451800_SSC_A_m1 Correlogram of Samples")
+plot(SSC_Rumseym1,which = 5,set.up = F)
+title(main="11451800_SSC_A_m1 Normal Discharge")
+plot(SSC_Rumseym1,which = 6,set.up = F)
+title(main="11451800_SSC_A_m1 Box Plot of Loads")
 
 #These functions plot the data using the chosen best model and add a title and labels to the plot.
 
-SSC_Rumsey_load<-predLoad(SSC_Rumseym9,RumseyQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
-write.csv(SSC_Rumsey_load,"2_Rumsey_SSC_Flux_Annual.csv")
-SSC_Rumsey_load_day<-predLoad(SSC_Rumseym9, RumseyQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
-write.csv(SSC_Rumsey_load_day,"2_Rumsey_SSC_Flux_Daily.csv")
+SSC_Rumsey_load<-predLoad(SSC_Rumseym1,RumseyQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
+write.csv(SSC_Rumsey_load,"3_Rumsey_SSC_A_m1_Flux_Annual.csv")
+SSC_Rumsey_load_day<-predLoad(SSC_Rumseym1, RumseyQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
+write.csv(SSC_Rumsey_load_day,"3_Rumsey_SSC_A__m1_Flux_Daily.csv")
 
 #Lines 75 and 77 create data frames that use the function predLoad. 
 #Description of predLoad: Estimate loads from a rating-curve model from loadReg for a new data frame, aggregating the loads by specified time periods.
