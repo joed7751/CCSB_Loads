@@ -1,0 +1,23 @@
+
+https://www.rstudio.com/online-learning/
+
+https://swirlstats.com/
+
+https://www.datacamp.com/
+
+https://github.com/USGS-R
+
+https://github.com/USGS-R/rloadest
+
+https://github.com/USGS-R/dataRetrieval
+
+https://github.com/USGS-R/loadflex
+
+https://github.com/USGS-R/egret
+
+
+
+
+
+Article with links- Oct.2018
+https://www.dataquest.io/blog/learn-r-for-data-science/
