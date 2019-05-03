@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556904091214.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "665889185",
+    "id" : "8AE96D17",
+    "lastKnownWriteTime" : 1544211376,
+    "last_content_update" : 1544211376,
+    "path" : "~/CCSB_Loads/2018_CCSB_LoadsData_WY2010-2017/Sites/Yolo_11452500/2_wy2017/2_rloadest/2_pTHg/pTHg_Yolo_RScript.R",
+    "project_path" : "pTHg_Yolo_RScript.R",
+    "properties" : {
+        "cursorPosition" : "11,19",
+        "scrollLine" : "0"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
