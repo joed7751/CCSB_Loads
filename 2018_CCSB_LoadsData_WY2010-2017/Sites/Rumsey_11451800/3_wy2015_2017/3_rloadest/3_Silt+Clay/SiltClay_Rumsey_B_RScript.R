@@ -22,23 +22,23 @@ RumseyQ<-importRDB("RumseyQR_B.txt")
 #These data frames are created by the function importRDB. 
 #The calls above bring the constituent data and the daily flow data into the script.
 
-SiltClay_Rumseym1 <- loadReg(SiltClay ~model(1), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SiltClay_Rumseym1 <- loadReg(Silt.Clay ~model(1), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
 SiltClay_Rumseym1
-SiltClay_Rumseym2 <- loadReg(SiltClay ~model(2), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SiltClay_Rumseym2 <- loadReg(Silt.Clay ~model(2), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
 SiltClay_Rumseym2
-SiltClay_Rumseym3 <- loadReg(SiltClay ~model(3), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SiltClay_Rumseym3 <- loadReg(Silt.Clay ~model(3), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
 SiltClay_Rumseym3
-SiltClay_Rumseym4 <- loadReg(SiltClay ~model(4), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SiltClay_Rumseym4 <- loadReg(Silt.Clay ~model(4), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
 SiltClay_Rumseym4
-SiltClay_Rumseym5 <- loadReg(SiltClay ~model(5), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SiltClay_Rumseym5 <- loadReg(Silt.Clay ~model(5), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
 SiltClay_Rumseym5
-SiltClay_Rumseym6 <- loadReg(SiltClay ~model(6), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SiltClay_Rumseym6 <- loadReg(Silt.Clay ~model(6), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
 SiltClay_Rumseym6
-SiltClay_Rumseym7 <- loadReg(SiltClay ~model(7), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SiltClay_Rumseym7 <- loadReg(Silt.Clay ~model(7), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
 SiltClay_Rumseym7
-SiltClay_Rumseym8 <- loadReg(SiltClay ~model(8), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SiltClay_Rumseym8 <- loadReg(Silt.Clay ~model(8), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
 SiltClay_Rumseym8
-SiltClay_Rumseym9 <- loadReg(SiltClay ~model(9), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
+SiltClay_Rumseym9 <- loadReg(Silt.Clay ~model(9), data = SiltClay_Rumsey, flow="Flow", dates = "Dates" ,conc.units="mg/L" , station = "CCSB-Yolo")
 SiltClay_Rumseym9
 
 #These objects of class "loadReg" are created.
@@ -57,25 +57,25 @@ SiltClay_Rumseym9
 #print(SiltClay_Rumseym9,brief = FALSE, load.only = FALSE)
 #Commenting these out. These provide some explanations of the data in a longer form. Brief results are printed to console (SiltClay_Rumseym1-9)
 
-plot(SiltClay_Rumseym1,ann=FALSE)
-title(main = "11451800_B_Silt+Clay_m1 Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
-plot(SiltClay_Rumseym1,which = 2,set.up = F)
-title(main = "11451800_B_Silt+Clay_m1 Residuals vs Fitted Values")
-plot(SiltClay_Rumseym1,which = 3,set.up = F)
-title(main = "11451800_B_Silt+Clay_m1 Assessing Heteroscedasticity") #Add "of Residuals"?
-plot(SiltClay_Rumseym1,which = 4,set.up = F)
-title(main = "11451800_B_Silt+Clay_m1 Correlogram of Samples")
-plot(SiltClay_Rumseym1,which = 5,set.up = F)
-title(main="11451800_B_Silt+Clay_m1 Normal Discharge")
-plot(SiltClay_Rumseym1,which = 6,set.up = F)
-title(main="11451800_B_Silt+Clay_m1 Box Plot of Loads")
+plot(SiltClay_Rumseym9,ann=FALSE)
+title(main = "11451800_B_Silt+Clay_m9 Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
+plot(SiltClay_Rumseym9,which = 2,set.up = F)
+title(main = "11451800_B_Silt+Clay_m9 Residuals vs Fitted Values")
+plot(SiltClay_Rumseym9,which = 3,set.up = F)
+title(main = "11451800_B_Silt+Clay_m9 Assessing Heteroscedasticity") #Add "of Residuals"?
+plot(SiltClay_Rumseym9,which = 4,set.up = F)
+title(main = "11451800_B_Silt+Clay_m9 Correlogram of Samples")
+plot(SiltClay_Rumseym9,which = 5,set.up = F)
+title(main="11451800_B_Silt+Clay_m9 Normal Discharge")
+plot(SiltClay_Rumseym9,which = 6,set.up = F)
+title(main="11451800_B_Silt+Clay_m9 Box Plot of Loads")
 
 #These functions plot the data using the chosen best model and add a title and labels to the plot.
 
-SiltClay_Rumsey_load<-predLoad(SiltClay_Rumseym1,RumseyQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
-write.csv(SiltClay_Rumsey_load,"3_Rumsey_B_Silt+Clay_m1_Flux_Annual.csv")
-SiltClay_Rumsey_load_day<-predLoad(SiltClay_Rumseym1, RumseyQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
-write.csv(SiltClay_Rumsey_load_day,"3_Rumsey_B_Silt+Clay_m1_Flux_Daily.csv")
+SiltClay_Rumsey_load<-predLoad(SiltClay_Rumseym9,RumseyQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
+write.csv(SiltClay_Rumsey_load,"3_Rumsey_B_Silt+Clay_m9_Flux_Annual.csv")
+SiltClay_Rumsey_load_day<-predLoad(SiltClay_Rumseym9, RumseyQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
+write.csv(SiltClay_Rumsey_load_day,"3_Rumsey_B_Silt+Clay_m9_Flux_Daily.csv")
 
 #Lines 75 and 77 create data frames that use the function predLoad. 
 #Description of predLoad: Estimate loads from a rating-curve model from loadReg for a new data frame, aggregating the loads by specified time periods.
