@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1556921328269.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B44F0837",
+    "lastKnownWriteTime" : 3544388264574058502,
+    "last_content_update" : 1556921328269,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "A1B6C32D",
+        "caption" : "SiltClay_Rumsey",
+        "contentUrl" : "grid_resource/gridviewer.html?env=_rs_no_env&obj=SiltClay_Rumsey&cache_key=A1B6C32D",
+        "displayedObservations" : "52",
+        "environment" : "_rs_no_env",
+        "object" : "SiltClay_Rumsey",
+        "preview" : "0",
+        "totalObservations" : "52",
+        "variables" : "4"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
