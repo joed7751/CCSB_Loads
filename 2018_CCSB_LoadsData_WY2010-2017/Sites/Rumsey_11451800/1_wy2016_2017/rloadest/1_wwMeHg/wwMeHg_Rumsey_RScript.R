@@ -57,25 +57,25 @@ wwMeHg_Rumseym9
 #print(wwMeHg_Rumseym9,brief = FALSE, load.only = FALSE)
 #Commenting these out. These provide some explanations of the data in a longer form. Brief results are printed to console (wwMeHg_Rumseym1-9)
 
-plot(wwMeHg_Rumseym7,ann=FALSE)
-title(main = "11451800_wwMeHg_m7 Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
-plot(wwMeHg_Rumseym7,which = 2,set.up = F)
-title(main = "11451800_wwMeHg_m7 Residuals vs Fitted Values")
-plot(wwMeHg_Rumseym7,which = 3,set.up = F)
-title(main = "11451800_wwMeHg_m7 Assessing Heteroscedasticity") #Add "of Residuals"?
-plot(wwMeHg_Rumseym7,which = 4,set.up = F)
-title(main = "11451800_wwMeHg_m7 Correlogram of Samples")
-plot(wwMeHg_Rumseym7,which = 5,set.up = F)
-title(main="11451800_wwMeHg_m7 Normal Discharge")
-plot(wwMeHg_Rumseym7,which = 6,set.up = F)
-title(main="11451800_wwMeHg_m7 Box Plot of Loads")
+plot(wwMeHg_Rumseym3,ann=FALSE)
+title(main = "11451800_wwMeHg_m3 Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
+plot(wwMeHg_Rumseym3,which = 2,set.up = F)
+title(main = "11451800_wwMeHg_m3 Residuals vs Fitted Values")
+plot(wwMeHg_Rumseym3,which = 3,set.up = F)
+title(main = "11451800_wwMeHg_m3 Assessing Heteroscedasticity") #Add "of Residuals"?
+plot(wwMeHg_Rumseym3,which = 4,set.up = F)
+title(main = "11451800_wwMeHg_m3 Correlogram of Samples")
+plot(wwMeHg_Rumseym3,which = 5,set.up = F)
+title(main="11451800_wwMeHg_m3 Normal Discharge")
+plot(wwMeHg_Rumseym3,which = 6,set.up = F)
+title(main="11451800_wwMeHg_m3 Box Plot of Loads")
 
 #These functions plot the data using the chosen best model and add a title and labels to the plot.
 
-wwMeHg_Rumsey_load<-predLoad(wwMeHg_Rumseym7,RumseyQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
-write.csv(wwMeHg_Rumsey_load,"1_Rumsey_wwMeHg_m7_Flux_Annual.csv")
-wwMeHg_Rumsey_load_day<-predLoad(wwMeHg_Rumseym7, RumseyQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
-write.csv(wwMeHg_Rumsey_load_day,"1_Rumsey_wwMeHg_m7_Flux_Daily.csv")
+wwMeHg_Rumsey_load<-predLoad(wwMeHg_Rumseym3,RumseyQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
+write.csv(wwMeHg_Rumsey_load,"1_Rumsey_wwMeHg_m3_Flux_Annual.csv")
+wwMeHg_Rumsey_load_day<-predLoad(wwMeHg_Rumseym3, RumseyQ,load.units = "kg",by="day",allow.incomplete = TRUE,conf.int = 0.90,print = TRUE)
+write.csv(wwMeHg_Rumsey_load_day,"1_Rumsey_wwMeHg_m3_Flux_Daily.csv")
 
 #Lines 75 and 77 create data frames that use the function predLoad. 
 #Description of predLoad: Estimate loads from a rating-curve model from loadReg for a new data frame, aggregating the loads by specified time periods.

@@ -5,14 +5,14 @@
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
-    "hash" : "128684156",
+    "hash" : "2867010824",
     "id" : "FC64875",
-    "lastKnownWriteTime" : 1568437003,
-    "last_content_update" : 1568437003779,
+    "lastKnownWriteTime" : 1568447607,
+    "last_content_update" : 1568447607877,
     "path" : "C:/Users/slrose/R/2018_CCSB_LoadsData_WY2010-2017/Sites/Rumsey_11451800/1_wy2016_2017/rloadest/1_fMeHg/fMeHg_Rumsey_RScript.R",
     "project_path" : "fMeHg_Rumsey_RScript.R",
     "properties" : {
-        "cursorPosition" : "66,56",
+        "cursorPosition" : "72,98",
         "scrollLine" : "54"
     },
     "relative_order" : 1,
