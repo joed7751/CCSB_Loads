@@ -47,17 +47,17 @@ pTHg_Yolom9
 #When the models are run (m1-m9), the output will be in the console. These are the stats used to select the best model. 
 
 plot(pTHg_Yolom2,ann=FALSE)
-title(main = "11452500_pTHg_m2 Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
+title(main = "5_11452500_pTHg_m2 Response vs Fitted Values",xlab = "Fitted Values",ylab = "Response Values")
 plot(pTHg_Yolom2,which = 2,set.up = F)
-title(main = "11452500_pTHg_m2 Residuals vs Fitted Values")
+title(main = "5_11452500_pTHg_m2 Residuals vs Fitted Values")
 plot(pTHg_Yolom2,which = 3,set.up = F)
-title(main = "11452500_pTHg_m2 Assessing Heteroscedasticity") #Add "of Residuals"?
+title(main = "5_11452500_pTHg_m2 Assessing Heteroscedasticity") #Add "of Residuals"?
 plot(pTHg_Yolom2,which = 4,set.up = F)
-title(main = "11452500_pTHg_m2 Correlogram of Samples")
+title(main = "5_11452500_pTHg_m2 Correlogram of Samples")
 plot(pTHg_Yolom2,which = 5,set.up = F)
-title(main="11452500_pTHg_m2 Normal Discharge")
+title(main="5_11452500_pTHg_m2 Normal Discharge")
 plot(pTHg_Yolom2,which = 6,set.up = F)
-title(main="11452500_pTHg_m2 Box Plot of Loads")
+title(main="5_11452500_pTHg_m2 Box Plot of Loads")
 
 #These functions plot the data using the chosen best model and add a title and labels to the plot.
 

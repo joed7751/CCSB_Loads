@@ -1,0 +1,13 @@
+{
+    "path" : "C:/Users/slrose/R/2018_CCSB_LoadsData_WY2010-2017/Sites/Yolo_11452500/5_wy2017-18/5_rloadest/5_fTHg",
+    "sortOrder" : [
+        {
+            "ascending" : false,
+            "columnIndex" : 4
+        },
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
