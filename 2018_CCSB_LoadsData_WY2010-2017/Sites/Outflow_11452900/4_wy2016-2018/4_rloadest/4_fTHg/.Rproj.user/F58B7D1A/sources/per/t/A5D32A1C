@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570050264880.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "370183589",
+    "id" : "A5D32A1C",
+    "lastKnownWriteTime" : 1569970394,
+    "last_content_update" : 1569970394,
+    "path" : "C:/Users/slrose/R/2018_CCSB_LoadsData_WY2010-2017/Sites/Outflow_11452900/4_wy2016-2018/4_rloadest/4_fTHg/fTHg_Outflow_RScript.R",
+    "project_path" : "fTHg_Outflow_RScript.R",
+    "properties" : {
+        "cursorPosition" : "79,67",
+        "scrollLine" : "53"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
