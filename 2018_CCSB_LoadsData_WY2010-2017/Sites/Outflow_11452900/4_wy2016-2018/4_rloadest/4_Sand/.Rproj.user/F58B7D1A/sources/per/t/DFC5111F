@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570575702073.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4158874618",
+    "id" : "DFC5111F",
+    "lastKnownWriteTime" : 1570598032,
+    "last_content_update" : 1570598032506,
+    "path" : "C:/Users/slrose/R/2018_CCSB_LoadsData_WY2010-2017/Sites/Outflow_11452900/4_wy2016-2018/4_rloadest/4_Sand/Sand_Outflow_RScript.R",
+    "project_path" : "Sand_Outflow_RScript.R",
+    "properties" : {
+        "cursorPosition" : "79,67",
+        "scrollLine" : "57"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
