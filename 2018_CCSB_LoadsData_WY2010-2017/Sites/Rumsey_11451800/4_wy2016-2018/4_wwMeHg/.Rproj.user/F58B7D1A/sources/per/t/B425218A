@@ -1,0 +1,29 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1570657302357.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "B425218A",
+    "lastKnownWriteTime" : 7308604914264011873,
+    "last_content_update" : 1570657302357,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "909C97A5",
+        "caption" : "wwMeHg_Rumsey",
+        "contentUrl" : "grid_resource/gridviewer.html?env=_rs_no_env&obj=wwMeHg_Rumsey&cache_key=909C97A5",
+        "displayedObservations" : 52,
+        "environment" : "_rs_no_env",
+        "object" : "wwMeHg_Rumsey",
+        "preview" : 0,
+        "totalObservations" : 52,
+        "variables" : 5
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
