@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571575598335.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2803412869",
+    "id" : "D75B1E5F",
+    "lastKnownWriteTime" : 1571575675,
+    "last_content_update" : 1571575675,
+    "path" : "C:/Users/slrose/R/2018_CCSB_LoadsData_WY2010-2017/Sites/Outflow_11452900/4_wy2016-2018/4_rloadest/4_Silt+Clay/SiltClay_Comb_Outflow_RScript.R",
+    "project_path" : "SiltClay_Comb_Outflow_RScript.R",
+    "properties" : {
+        "cursorPosition" : "69,82",
+        "scrollLine" : "48"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
