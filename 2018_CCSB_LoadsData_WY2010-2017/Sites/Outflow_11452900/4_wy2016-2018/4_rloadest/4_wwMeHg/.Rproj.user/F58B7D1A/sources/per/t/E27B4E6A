@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571600964101.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1236742594",
+    "id" : "E27B4E6A",
+    "lastKnownWriteTime" : 1571601016,
+    "last_content_update" : 1571601016733,
+    "path" : "C:/Users/slrose/R/2018_CCSB_LoadsData_WY2010-2017/Sites/Outflow_11452900/4_wy2016-2018/4_rloadest/4_wwMeHg/wwMeHg_Comb_Outflow_RScript.R",
+    "project_path" : "wwMeHg_Comb_Outflow_RScript.R",
+    "properties" : {
+        "cursorPosition" : "103,78",
+        "scrollLine" : "82"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
