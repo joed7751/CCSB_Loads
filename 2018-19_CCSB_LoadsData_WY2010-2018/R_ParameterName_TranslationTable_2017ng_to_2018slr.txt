@@ -1,0 +1,16 @@
+Nick Graham's Load Parameter Names     Shanna Rose's Load Parameter Names
+
+Alkalinity                             Alkalinity
+Chloride			       Chloride
+DOC				       DOC
+FHg				       fTHg
+FMeHg				       fMeHg
+PHg				       pTHg
+PMeHg				       pMeHg
+PSSC				       SSC
+RHg				       pRHg
+Sand				       Sand
+Silt+Clay			       Silt+Clay
+Sulfate				       Sulfate
+THg				       wwTHg
+TMeHg				       wwMeHg

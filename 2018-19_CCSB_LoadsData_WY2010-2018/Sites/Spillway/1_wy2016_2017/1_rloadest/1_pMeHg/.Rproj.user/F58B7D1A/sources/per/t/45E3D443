@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1571783250627.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "899313290",
+    "id" : "45E3D443",
+    "lastKnownWriteTime" : 1571803673,
+    "last_content_update" : 1571803673,
+    "path" : "C:/Users/slrose/R/2018-19_CCSB_LoadsData_WY2010-2018/Sites/Spillway/1_wy2016_2017/1_rloadest/1_pMeHg/pMeHg_Spillway_RScript.R",
+    "project_path" : "pMeHg_Spillway_RScript.R",
+    "properties" : {
+        "cursorPosition" : "109,71",
+        "scrollLine" : "84"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
