@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1572977615744.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "620294007",
+    "id" : "B3EDFED3",
+    "lastKnownWriteTime" : 1572978625,
+    "last_content_update" : 1572978625730,
+    "path" : "C:/Users/slrose/R/2018-19_CCSB_LoadsData_WY2010-2018/Sites/S_Abutment_11452800/8_wy2010-2015/8_rloadest/8_pTHg/pTHg_SWeir_RScript.R",
+    "project_path" : "pTHg_SWeir_RScript.R",
+    "properties" : {
+        "cursorPosition" : "77,72",
+        "scrollLine" : "55"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
