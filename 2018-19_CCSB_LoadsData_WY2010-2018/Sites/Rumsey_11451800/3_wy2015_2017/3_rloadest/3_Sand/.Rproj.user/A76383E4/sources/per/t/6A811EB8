@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1578941228941.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2767738506",
+    "id" : "6A811EB8",
+    "lastKnownWriteTime" : 1571844274,
+    "last_content_update" : 1571844274,
+    "path" : "~/CCSB_Loads/2018-19_CCSB_LoadsData_WY2010-2018/Sites/Rumsey_11451800/3_wy2015_2017/3_rloadest/3_Sand/Sand_Rumsey_A_RScript.R",
+    "project_path" : "Sand_Rumsey_A_RScript.R",
+    "properties" : {
+        "cursorPosition" : "83,0",
+        "scrollLine" : "48"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
