@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1583183850599.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1016169119",
+    "id" : "D2B90BA5",
+    "lastKnownWriteTime" : 1571844274,
+    "last_content_update" : 1571844274,
+    "path" : "~/CCSB_Loads/2018-19_CCSB_LoadsData_WY2010-2018/Sites/Rumsey_11451800/4_wy2016-2018/4_fTHg/fTHg_Rumsey_RScript.R",
+    "project_path" : "fTHg_Rumsey_RScript.R",
+    "properties" : {
+        "cursorPosition" : "9,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

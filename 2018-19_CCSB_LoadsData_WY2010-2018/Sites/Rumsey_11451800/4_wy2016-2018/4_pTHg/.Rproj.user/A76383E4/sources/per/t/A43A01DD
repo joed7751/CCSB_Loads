@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1583183673403.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A43A01DD",
+    "lastKnownWriteTime" : 4505010554,
+    "last_content_update" : 1583183673403,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "35BA25D9",
+        "caption" : "pTHg_Rumsey_load_day",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=pTHg_Rumsey_load_day&cache_key=35BA25D9",
+        "displayedObservations" : 1096,
+        "environment" : "",
+        "expression" : "pTHg_Rumsey_load_day",
+        "object" : "pTHg_Rumsey_load_day",
+        "preview" : 0,
+        "totalObservations" : 1096,
+        "variables" : 7
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
