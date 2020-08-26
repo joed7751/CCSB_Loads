@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1594397841796.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "870296909",
+    "id" : "987EE11F",
+    "lastKnownWriteTime" : 1594398529,
+    "last_content_update" : 1594398529147,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/4_S_Abutment_11452800/fMeHg/fMeHg 2010-2019/South_fMeHg2010-2019.R",
+    "project_path" : "South_fMeHg2010-2019.R",
+    "properties" : {
+        "cursorPosition" : "146,0",
+        "scrollLine" : "115"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

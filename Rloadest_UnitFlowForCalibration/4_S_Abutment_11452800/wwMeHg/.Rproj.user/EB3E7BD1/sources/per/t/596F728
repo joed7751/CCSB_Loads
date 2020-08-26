@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592275131851.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2888685664",
+    "id" : "596F728",
+    "lastKnownWriteTime" : 1592277890,
+    "last_content_update" : 1592277890076,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/S_Abutment_11452800/wwMeHg/South_wwMeHg2013-2019.R",
+    "project_path" : "South_wwMeHg2013-2019.R",
+    "properties" : {
+        "cursorPosition" : "145,80",
+        "scrollLine" : "115"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

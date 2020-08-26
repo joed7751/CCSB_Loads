@@ -1,0 +1,24 @@
+{
+    "id": "ADB42993",
+    "path": "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/5_GatedOuflowand_SpillWay/wwTHg/GatedSpillWay_wwTHg2010-2019.R",
+    "project_path": "GatedSpillWay_wwTHg2010-2019.R",
+    "type": "r_source",
+    "hash": "2111200887",
+    "contents": "",
+    "dirty": false,
+    "created": 1594843416569.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "cursorPosition": "147,0",
+        "scrollLine": "116"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1596589641,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1596589641272,
+    "read_only": false,
+    "read_only_alternatives": []
+}

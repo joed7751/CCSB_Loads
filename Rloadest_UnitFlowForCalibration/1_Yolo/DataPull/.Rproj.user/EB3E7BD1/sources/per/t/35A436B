@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593193854640.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "35A436B",
+    "lastKnownWriteTime" : 8533869541156730418,
+    "last_content_update" : 1593193854640,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "2CF1E437",
+        "caption" : "dischargeUnit",
+        "contentUrl" : "grid_resource/gridviewer.html?env=_rs_no_env&obj=dischargeUnit&cache_key=2CF1E437",
+        "displayedObservations" : 348826,
+        "environment" : "_rs_no_env",
+        "expression" : "format(x)",
+        "object" : "dischargeUnit",
+        "preview" : 0,
+        "totalObservations" : 348826,
+        "variables" : 6
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

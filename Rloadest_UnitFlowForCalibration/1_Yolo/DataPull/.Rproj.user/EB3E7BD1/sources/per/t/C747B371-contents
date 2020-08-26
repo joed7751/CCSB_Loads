@@ -1,0 +1,32 @@
+library(loadflex)
+library(rloadest)
+library(dataRetrieval)
+
+#################################################
+#################################################
+#Pulling Flow Data
+#################################################
+##Daily Flow
+#################################################
+siteNumber <-"11452500" #this is to set up the site
+parameterCd <- "00060" # Discharge
+dischargeDaily <- readNWISdv(siteNumber, parameterCd,
+                            "2009-10-01", "2019-10-01") #pulling  out the 15 min Q data from NWIS
+YoloQ_Day <- renameNWISColumns(dischargeDaily)
+YoloQ_Day<- YoloQ_Day[c("site_no","Date","Flow")] #pulling out only the columns we need
+colnames(YoloQ_Day) = c("Site","Dates", "Flow")        #changing columns name
+YoloQ_Day <- subset(YoloQ_Day, Dates < as.POSIXct("2019-10-01 00:00:00", tz="EST5EDT"))
+exportCSV(YoloQ_Day, file.name = "YoloQDaily_2009_2019.cvs")
+YoloQ_Day
+
+#################################################
+##Unit  Flow
+#################################################
+dischargeUnit<- readNWISuv(siteNumber, parameterCd,
+                            "2009-10-01", "2019-10-01") #pulling  out the 15 min Q data from NWIS
+YoloQ_Unit <- renameNWISColumns(dischargeUnit)
+YoloQ_Unit <- YoloQ_Unit[c("site_no","dateTime","Flow_Inst")] #pulling out only the columns we need
+colnames(YoloQ_Unit) = c("Site","Dates", "Flow")        #changing columns name
+YoloQ_Unit <- subset(YoloQ_Unit, Dates < as.POSIXct("2019-10-01 00:00:00", tz="EST5EDT"))
+exportCSV(YoloQ_Unit, file.name = "YoloQ_Unit_2009_2019.cvs")
+YoloQ_Unit

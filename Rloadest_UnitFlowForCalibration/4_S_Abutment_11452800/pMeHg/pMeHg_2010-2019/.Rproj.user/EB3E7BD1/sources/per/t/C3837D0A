@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1594341568469.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1606058986",
+    "id" : "C3837D0A",
+    "lastKnownWriteTime" : 1594397810,
+    "last_content_update" : 1594397810818,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/4_S_Abutment_11452800/pMeHg/pMeHg_2010-2019/South_pMeHg2010-2019.R",
+    "project_path" : "South_pMeHg2010-2019.R",
+    "properties" : {
+        "cursorPosition" : "146,0",
+        "scrollLine" : "115"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

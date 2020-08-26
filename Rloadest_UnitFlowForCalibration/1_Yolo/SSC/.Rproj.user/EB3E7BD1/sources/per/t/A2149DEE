@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593532461909.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "A2149DEE",
+    "lastKnownWriteTime" : 3474859406387060768,
+    "last_content_update" : 1593532461909,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "30B3B1",
+        "caption" : "SSC_Yolo",
+        "contentUrl" : "grid_resource/gridviewer.html?env=_rs_no_env&obj=SSC_Yolo&cache_key=30B3B1",
+        "displayedObservations" : 41,
+        "environment" : "_rs_no_env",
+        "expression" : "format(x)",
+        "object" : "SSC_Yolo",
+        "preview" : 0,
+        "totalObservations" : 41,
+        "variables" : 3
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

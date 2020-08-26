@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590184385831.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3983738342",
+    "id" : "D0E36E6A",
+    "lastKnownWriteTime" : 1594057559,
+    "last_content_update" : 1594057559466,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/3_GatedOut_11452900/DataPull/WQ_dataPull.R",
+    "project_path" : "WQ_dataPull.R",
+    "properties" : {
+        "cursorPosition" : "28,15",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

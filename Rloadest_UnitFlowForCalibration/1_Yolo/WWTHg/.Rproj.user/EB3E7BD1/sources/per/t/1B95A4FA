@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593486913358.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2307786553",
+    "id" : "1B95A4FA",
+    "lastKnownWriteTime" : 1593488023,
+    "last_content_update" : 1593488023016,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/1_Yolo/WWTHg/Yolo_wwTHg2017-2019.R",
+    "project_path" : "Yolo_wwTHg2017-2019.R",
+    "properties" : {
+        "cursorPosition" : "146,0",
+        "scrollLine" : "124"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592424654821.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2465386430",
+    "id" : "C615EA7D",
+    "lastKnownWriteTime" : 1594656593,
+    "last_content_update" : 1594656593322,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/4_N&S_Abutment/wwMeHg/CombSpillWay_wwMeg2013-2019.R",
+    "project_path" : "CombSpillWay_wwMeg2013-2019.R",
+    "properties" : {
+        "cursorPosition" : "146,0",
+        "scrollLine" : "111"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

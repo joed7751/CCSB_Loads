@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592643984411.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "324374961",
+    "id" : "C2FA025C",
+    "lastKnownWriteTime" : 1594594048,
+    "last_content_update" : 1594594048189,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/3_GatedOut_11452900/pMeHg/GatedOutflow_pMeHg2010-2019.R",
+    "project_path" : "GatedOutflow_pMeHg2010-2019.R",
+    "properties" : {
+        "cursorPosition" : "144,78",
+        "scrollLine" : "126"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

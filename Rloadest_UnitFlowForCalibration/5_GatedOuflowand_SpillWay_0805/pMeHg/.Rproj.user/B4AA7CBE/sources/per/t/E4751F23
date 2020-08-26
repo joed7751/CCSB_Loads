@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1598303083325.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2782263856",
+    "id" : "E4751F23",
+    "lastKnownWriteTime" : 1597988340,
+    "last_content_update" : 1597988340,
+    "path" : "Z:/joed/Documents/Documents20/Alpers-CCSB/Rloadest_UnitFlowForCalibration/5_GatedOuflowand_SpillWay_0805/pMeHg/GatedSpillWay_pMeHg2010-2019.R",
+    "project_path" : "GatedSpillWay_pMeHg2010-2019.R",
+    "properties" : {
+        "cursorPosition" : "3,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

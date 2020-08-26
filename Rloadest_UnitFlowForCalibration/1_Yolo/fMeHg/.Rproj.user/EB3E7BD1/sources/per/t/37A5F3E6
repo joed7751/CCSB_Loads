@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593496302737.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "37A5F3E6",
+    "lastKnownWriteTime" : 2314885530819637549,
+    "last_content_update" : 1593496302737,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "98D09480",
+        "caption" : "fMeHg_Yolo",
+        "contentUrl" : "grid_resource/gridviewer.html?env=_rs_no_env&obj=fMeHg_Yolo&cache_key=98D09480",
+        "displayedObservations" : 41,
+        "environment" : "_rs_no_env",
+        "expression" : "format(x)",
+        "object" : "fMeHg_Yolo",
+        "preview" : 0,
+        "totalObservations" : 41,
+        "variables" : 5
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

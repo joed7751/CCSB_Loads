@@ -1,0 +1,124 @@
+library(loadflex)
+library(rloadest)
+library(dataRetrieval)
+
+#################################################
+#pulling out data from NWISqw
+###################################################
+siteNumber <-"11452600" #Road 102# 
+
+###################################################
+#Pulling PTHg (ng/L)
+###################################################
+
+parameterCd_pTHg <- "62976" # pTHg
+
+pTHg_WQ_Road102 <- readNWISqw(siteNumber, parameterCd_pTHg,
+                           "2009-10-01", "2017-10-01") 
+pTHg_WQ_Road102 <-pTHg_WQ_Road102 [c("startDateTime", "result_va", "parm_cd")]
+colnames(pTHg_WQ_Road102) [colnames(pTHg_WQ_Road102)%in% c ("startDateTime", "result_va")] <- c("DateTime", "pTHg")
+exportCSV(pTHg_WQ_Road102, file.name = "Road102_pTHg_NWISqw.cvs")
+
+###################################################
+#Pulling pMeHg (ng/L)
+###################################################
+parameterCd_pMeHg <- "62977" # pMeHg
+
+pMeHg_WQ_Road102 <- readNWISqw(siteNumber, parameterCd_pMeHg,
+                           "2009-10-01", "2017-10-01") 
+pMeHg_WQ_Road102 <-pMeHg_WQ_Road102 [c("startDateTime", "result_va", "parm_cd")]
+colnames(pMeHg_WQ_Road102) [colnames(pMeHg_WQ_Road102)%in% c ("startDateTime", "result_va")] <- c("DateTime", "pMeHg")
+
+exportCSV(pMeHg_WQ_Road102, file.name = "Road102_pMeHg_NWISqw.cvs")
+
+
+###################################################
+#Pulling fTHg (ng/L)
+###################################################
+parameterCd_fTHg <- "50287" # fTHg
+fTHg_WQ_Road102 <- readNWISqw(siteNumber, parameterCd_fTHg,
+                            "2009-10-01", "2017-10-01") 
+
+fTHg_WQ_Road102 <-fTHg_WQ_Road102 [c("startDateTime", "result_va","parm_cd")]
+colnames(fTHg_WQ_Road102) [colnames(fTHg_WQ_Road102)%in% c ("startDateTime", "result_va")] <- c("DateTime", "fTHg")
+exportCSV(fTHg_WQ_Road102, file.name = "Road102_fTHg_NWISqw.cvs")
+
+###################################################
+#Pulling fMeHg (ng/L)
+###################################################
+parameterCd_fMeHg <- "50285" # fMeHg
+fMeHg_WQ_Road102 <- readNWISqw(siteNumber, parameterCd_fMeHg,
+                           "2009-10-01", "2017-10-01") 
+
+fMeHg_WQ_Road102 <-fMeHg_WQ_Road102 [c("startDateTime", "result_va","parm_cd")]
+colnames(fMeHg_WQ_Road102) [colnames(fMeHg_WQ_Road102)%in% c ("startDateTime", "result_va")] <- c("DateTime", "fMeHg")
+exportCSV(fMeHg_WQ_Road102, file.name = "Road102_fMeHg_NWISqw.cvs")
+
+
+###################################################
+#Pulling SSC (mg/L)
+###################################################
+parameterCd_SSC <- "80154" # SSC
+SSC_WQ_Road102 <- readNWISqw(siteNumber, parameterCd_SSC,
+                            "2009-10-01", "2017-10-01") 
+
+SSC_WQ_Road102 <-SSC_WQ_Road102 [c("startDateTime", "result_va","parm_cd")]
+colnames(SSC_WQ_Road102 ) [colnames(SSC_WQ_Road102 )%in% c ("startDateTime", "result_va")] <- c("DateTime", "SSC")
+exportCSV(SSC_WQ_Road102, file.name = "Road102_SSC_NWISqw.cvs")
+
+###################################################
+#Pulling fines to add to SSC (for sand) (mg/L)
+###################################################
+parameterCd_fines <- "70331" # fins
+fins_WQ_Road102 <- readNWISqw(siteNumber, parameterCd_fines,
+                          "2009-10-01", "2017-10-01") 
+
+fins_WQ_Road102 <-fins_WQ_Road102 [c("startDateTime", "result_va","parm_cd")]
+colnames(fins_WQ_Road102) [colnames(fins_WQ_Road102)%in% c ("startDateTime", "result_va")] <- c("DateTime", "fins")
+exportCSV(fins_WQ_Road102, file.name = "Road102_fins_NWISqw.cvs")
+
+
+###################################################
+#Pulling pRHg (ng/L)
+###################################################
+parameterCd_pRHg <- "52667" # pRHg
+pRHg_WQ_Road102 <- readNWISqw(siteNumber, parameterCd_pRHg,
+                         "2009-10-01", "2017-10-01") 
+
+pRHg_WQ_Road102 <-pRHg_WQ_Road102 [c("startDateTime", "result_va","parm_cd")]
+colnames(pRHg_WQ_Road102) [colnames(pRHg_WQ_Road102)%in% c ("startDateTime", "result_va")] <- c("DateTime", "pRHg")
+exportCSV(pRHg_WQ_Road102, file.name = "Road102_pRHg_NWISqw.cvs")
+
+
+###################################################
+#Pulling DOC (mg/L)
+###################################################
+parameterCd_DOC <- "00681" # DOC
+DOC_WQ_Road102 <- readNWISqw(siteNumber, parameterCd_DOC,
+                           "2009-10-01", "2017-10-01") 
+
+DOC_WQ_Road102 <-DOC_WQ_Road102 [c("startDateTime", "result_va","parm_cd")]
+colnames(DOC_WQ_Road102) [colnames(DOC_WQ_Road102)%in% c ("startDateTime", "result_va")] <- c("DateTime", "DOC")
+exportCSV(DOC_WQ_Road102, file.name = "Road102_DOC_NWISqw.cvs")
+
+###################################################
+#Pulling SO4mg/L
+###################################################
+parameterCd_SO4 <- "00945" # SO4
+SO4_WQ_Road102 <- readNWISqw(siteNumber, parameterCd_SO4,
+                          "2009-10-01", "2017-10-01") 
+
+SO4_WQ_Road102 <-SO4_WQ_Road102 [c("startDateTime", "result_va","parm_cd")]
+colnames(SO4_WQ_Road102) [colnames(SO4_WQ_Road102)%in% c ("startDateTime", "result_va")] <- c("DateTime", "SO4")
+exportCSV(SO4_WQ_Road102, file.name = "Road102_SO4_NWISqw.cvs")
+
+###################################################
+#Pulling Cl mg/L
+###################################################
+parameterCd_Cl <- "00940" # Cl
+Cl_WQ_Road102 <- readNWISqw(siteNumber, parameterCd_Cl,
+                          "2009-10-01", "2017-10-01") 
+
+Cl_WQ_Road102 <-Cl_WQ_Road102 [c("startDateTime", "result_va","parm_cd")]
+colnames(Cl_WQ_Road102) [colnames(Cl_WQ_Road102)%in% c ("startDateTime", "result_va")] <- c("DateTime", "Cl")
+exportCSV(Cl_WQ_Road102, file.name = "Road102_Cl_NWISqw.cvs")

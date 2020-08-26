@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592899027705.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4173268808",
+    "id" : "2576A1A",
+    "lastKnownWriteTime" : 1594607670,
+    "last_content_update" : 1594607670133,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/3_GatedOut_11452900/SSC/Gated_SSC_2010-2019.R",
+    "project_path" : "Gated_SSC_2010-2019.R",
+    "properties" : {
+        "cursorPosition" : "146,0",
+        "scrollLine" : "117"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

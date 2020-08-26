@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1594167497309.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3023917",
+    "id" : "B1F450CD",
+    "lastKnownWriteTime" : 1594168164,
+    "last_content_update" : 1594168164862,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/2_Road_102/fMeHg/Road102_fMeHg2010-2017.R",
+    "project_path" : "Road102_fMeHg2010-2017.R",
+    "properties" : {
+        "cursorPosition" : "145,0",
+        "scrollLine" : "116"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

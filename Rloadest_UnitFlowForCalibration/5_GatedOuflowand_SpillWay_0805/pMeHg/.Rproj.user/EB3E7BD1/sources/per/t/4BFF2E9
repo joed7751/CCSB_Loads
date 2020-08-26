@@ -1,0 +1,25 @@
+{
+    "id": "4BFF2E9",
+    "path": "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/5_GatedOuflowand_SpillWay/pMeHg/GatedSpillWay_pMeHg2010-2019.R",
+    "project_path": "GatedSpillWay_pMeHg2010-2019.R",
+    "type": "r_source",
+    "hash": "2782263856",
+    "contents": "",
+    "dirty": false,
+    "created": 1594866680364.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "cursorPosition": "145,0",
+        "scrollLine": "126",
+        "source_window_id": ""
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1596609058,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1596609058421,
+    "read_only": false,
+    "read_only_alternatives": []
+}

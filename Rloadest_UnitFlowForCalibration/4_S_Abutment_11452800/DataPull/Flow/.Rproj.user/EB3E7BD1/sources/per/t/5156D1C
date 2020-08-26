@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1589740755414.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "298985132",
+    "id" : "5156D1C",
+    "lastKnownWriteTime" : 1591297282,
+    "last_content_update" : 1591297282092,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/S_Abutment_11452800/DataPull/Flow/Q_dataPull.R",
+    "project_path" : "Q_dataPull.R",
+    "properties" : {
+        "cursorPosition" : "17,6",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

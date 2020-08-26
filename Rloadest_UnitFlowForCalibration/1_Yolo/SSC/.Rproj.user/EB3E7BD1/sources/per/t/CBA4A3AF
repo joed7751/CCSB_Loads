@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593532424494.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "564253377",
+    "id" : "CBA4A3AF",
+    "lastKnownWriteTime" : 1593535489,
+    "last_content_update" : 1593535489509,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/1_Yolo/SSC/Yolo_SSC-2019.R",
+    "project_path" : "Yolo_SSC-2019.R",
+    "properties" : {
+        "cursorPosition" : "48,0",
+        "scrollLine" : "41"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

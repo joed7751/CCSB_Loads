@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1594579230055.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "532498681",
+    "id" : "E917A9E7",
+    "lastKnownWriteTime" : 1594579415,
+    "last_content_update" : 1594579415618,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/3_GatedOut_11452900/pTHg/GatedOutflow_pTHg2010-2019.R",
+    "project_path" : "GatedOutflow_pTHg2010-2019.R",
+    "properties" : {
+        "cursorPosition" : "49,68",
+        "scrollLine" : "39"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

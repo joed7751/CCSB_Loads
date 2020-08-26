@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1592865023701.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3689355349",
+    "id" : "5065E7C5",
+    "lastKnownWriteTime" : 1594591658,
+    "last_content_update" : 1594591658909,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/3_GatedOut_11452900/wwTHg/Gated_wwTHg2010-2019.R",
+    "project_path" : "Gated_wwTHg2010-2019.R",
+    "properties" : {
+        "cursorPosition" : "48,0",
+        "scrollLine" : "35"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593486956602.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "FBF95E0B",
+    "lastKnownWriteTime" : 32651569751457901,
+    "last_content_update" : 1593486956602,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "7F947AE1",
+        "caption" : "wwTHg_Yolo",
+        "contentUrl" : "grid_resource/gridviewer.html?env=_rs_no_env&obj=wwTHg_Yolo&cache_key=7F947AE1",
+        "displayedObservations" : 41,
+        "environment" : "_rs_no_env",
+        "expression" : "format(x)",
+        "object" : "wwTHg_Yolo",
+        "preview" : 0,
+        "totalObservations" : 41,
+        "variables" : 3
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

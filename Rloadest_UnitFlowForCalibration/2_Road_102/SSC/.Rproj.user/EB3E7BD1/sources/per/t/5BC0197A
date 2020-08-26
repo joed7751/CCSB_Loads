@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1594236239015.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3069975647",
+    "id" : "5BC0197A",
+    "lastKnownWriteTime" : 1594237789,
+    "last_content_update" : 1594237789479,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/2_Road_102/SSC/Road102_SSC2010-2017.R",
+    "project_path" : "Road102_SSC2010-2017.R",
+    "properties" : {
+        "cursorPosition" : "145,0",
+        "scrollLine" : "110"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

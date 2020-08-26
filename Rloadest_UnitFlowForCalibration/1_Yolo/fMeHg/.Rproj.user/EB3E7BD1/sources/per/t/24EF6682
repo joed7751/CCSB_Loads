@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593496262234.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "523044043",
+    "id" : "24EF6682",
+    "lastKnownWriteTime" : 1593497917,
+    "last_content_update" : 1593497917969,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Rloadest_UnitFlowForCalibration/1_Yolo/fMeHg/Yolo_fMeHg2017-2019.R",
+    "project_path" : "Yolo_fMeHg2017-2019.R",
+    "properties" : {
+        "cursorPosition" : "58,14",
+        "scrollLine" : "48"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

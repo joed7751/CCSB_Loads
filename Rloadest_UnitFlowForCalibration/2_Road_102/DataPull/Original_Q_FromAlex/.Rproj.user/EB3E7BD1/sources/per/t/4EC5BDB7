@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1590705352719.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "555999354",
+    "id" : "4EC5BDB7",
+    "lastKnownWriteTime" : 1590177019,
+    "last_content_update" : 1590177019,
+    "path" : "D:/CCSB/CCSB_loadflex_DS/Road_102/Daily_Rloadest/DataPull/WQ/WQ_dataPull.R",
+    "project_path" : "WQ_dataPull.R",
+    "properties" : {
+        "cursorPosition" : "124,0",
+        "scrollLine" : "92"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

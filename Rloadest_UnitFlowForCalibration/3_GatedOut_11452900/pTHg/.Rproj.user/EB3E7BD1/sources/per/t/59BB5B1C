@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1594579284883.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "59BB5B1C",
+    "lastKnownWriteTime" : 1594069727,
+    "last_content_update" : 1594579284883,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "3FE9B467",
+        "caption" : "pTHg_Gated",
+        "contentUrl" : "grid_resource/gridviewer.html?env=_rs_no_env&obj=pTHg_Gated&cache_key=3FE9B467",
+        "displayedObservations" : 85,
+        "environment" : "_rs_no_env",
+        "expression" : "format(x)",
+        "object" : "pTHg_Gated",
+        "preview" : 0,
+        "totalObservations" : 85,
+        "variables" : 3
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

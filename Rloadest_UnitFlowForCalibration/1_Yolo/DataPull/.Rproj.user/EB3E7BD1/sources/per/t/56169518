@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593193861391.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "56169518",
+    "lastKnownWriteTime" : 7308619195232122478,
+    "last_content_update" : 1593193861391,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "CE558E2B",
+        "caption" : "YoloQ_Unit",
+        "contentUrl" : "grid_resource/gridviewer.html?env=_rs_no_env&obj=YoloQ_Unit&cache_key=CE558E2B",
+        "displayedObservations" : "348718",
+        "environment" : "_rs_no_env",
+        "expression" : "format(x)",
+        "object" : "YoloQ_Unit",
+        "preview" : "0",
+        "totalObservations" : "348718",
+        "variables" : "3"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

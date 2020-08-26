@@ -1,0 +1,33 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1594337844500.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "43AFC70B",
+    "lastKnownWriteTime" : 7953202402019129890,
+    "last_content_update" : 1594337844500,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "9F40D44B",
+        "caption" : "SouthQ",
+        "contentUrl" : "grid_resource/gridviewer.html?env=_rs_no_env&obj=SouthQ&cache_key=9F40D44B",
+        "displayedObservations" : 1815,
+        "environment" : "_rs_no_env",
+        "expression" : "format(x)",
+        "object" : "SouthQ",
+        "preview" : 0,
+        "totalObservations" : 1815,
+        "variables" : 2
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}
