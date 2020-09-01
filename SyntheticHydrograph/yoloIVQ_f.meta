@@ -1,0 +1,9 @@
+dateTime POSIXct
+Q numeric
+qual character
+lnQ numeric
+lnQ1 numeric
+lnQ3 numeric
+lnQ7 numeric
+lnQ30 numeric
+JD numeric
