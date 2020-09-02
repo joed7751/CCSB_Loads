@@ -144,3 +144,4 @@ exportCSV(preds_Flux_lr6day, file.name = "Yolo_pTHgFlux_lr6_Day2017-2019.cvs")
 preds_Flux_lr6WY<-predLoad(pTHg_Yolo_lr6,YoloQ,load.units="kg",by="water year",allow.incomplete = TRUE,conf.int = 0.95,print = TRUE)
 preds_Flux_lr6WY
 exportCSV(preds_Flux_lr6WY, file.name = "Yolo_pTHg_Flux_lr6_WY2017-2019.cvs")
+
