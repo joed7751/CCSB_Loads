@@ -2,7 +2,7 @@ library(smwrBase)
 library(smwrGraphs)
 library(smwrStats)
 library(dataRetrieval)
-library(EGRE)
+library(EGRET)
 library(smwrData)
 # Goal - synthetic hydrograph for 11452600 given mmt coincident w/ Q at 11452500, 
 #estimate 11452600 hydrograph given cal dataset and MOVE.1 regression. May add terms for antecedent condition.
